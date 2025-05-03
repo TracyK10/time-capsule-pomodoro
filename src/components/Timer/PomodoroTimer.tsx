@@ -6,6 +6,7 @@ import TimerSettings from './TimerSettings';
 import SessionHistory from './SessionHistory';
 import TaskList from './TaskList';
 import { useToast } from '@/components/ui/use-toast';
+import { PanelRight } from 'lucide-react';
 
 type TimerMode = 'work' | 'shortBreak' | 'longBreak';
 
@@ -164,7 +165,7 @@ const PomodoroTimer: React.FC = () => {
   }, [pomodoroTime, shortBreakTime, longBreakTime, mode, isActive]);
   
   return (
-    <div className="flex flex-col md:flex-row w-full h-full">
+    <div className="flex flex-col md:flex-row w-full h-full relative">
       {/* Main Timer Area */}
       <div className="flex-1 relative flex flex-col">
         <div className="flex-1 p-6 flex flex-col">
@@ -231,6 +232,17 @@ const PomodoroTimer: React.FC = () => {
           </div>
         </div>
       </div>
+      
+      {/* Sidebar Toggle Button (Always visible when sidebar is hidden) */}
+      {!sidebarOpen && (
+        <button 
+          onClick={() => setSidebarOpen(true)}
+          className="absolute top-4 right-4 md:right-0 md:mr-2 w-10 h-10 flex items-center justify-center rounded bg-retro-cream/90 text-retro-brown border border-retro-brown/30 hover:bg-retro-cream transition-colors"
+          aria-label="Show Sidebar"
+        >
+          <PanelRight className="h-5 w-5" />
+        </button>
+      )}
       
       {/* Sidebar */}
       <div 
