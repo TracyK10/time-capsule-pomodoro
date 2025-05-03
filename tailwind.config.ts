@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				/* Retro theme colors */
+				retro: {
+					brown: '#695141',
+					'dark-brown': '#483425',
+					'light-brown': '#8B6F5C',
+					orange: '#E08F62',
+					'light-orange': '#FEC6A1',
+					cream: '#FDE1D3',
+					'off-white': '#F8F1EA',
+					green: '#A2B38B',
+					'dark-green': '#5F6F54',
 				}
 			},
 			borderRadius: {
@@ -84,13 +97,27 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'tick': {
+					'0%, 100%': { transform: 'rotate(0deg)' },
+					'50%': { transform: 'rotate(0.5deg)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'tick': 'tick 1s linear infinite',
+			},
+			fontFamily: {
+				'typewriter': ['"Special Elite"', 'courier', 'monospace'],
+				'retro': ['"Roboto Slab"', 'serif'],
+			},
+			backgroundImage: {
+				'wood-grain': "url('/wood-texture.png')",
+				'paper-texture': "url('/paper-texture.png')",
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
