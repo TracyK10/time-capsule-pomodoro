@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Play, Pause, Stop } from 'lucide-react';
+import { Play, Pause, CircleStop } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface TimerControlsProps {
@@ -46,7 +46,7 @@ const TimerControls: React.FC<TimerControlsProps> = ({
         className="retro-button"
         aria-label="Reset Timer"
       >
-        <Stop className="mr-2 h-5 w-5 inline" />
+        <CircleStop className="mr-2 h-5 w-5 inline" />
         Reset
       </button>
     </div>
