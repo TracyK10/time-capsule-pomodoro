@@ -2,7 +2,7 @@
 
 *A cozy, vintage-themed productivity companion for the browser.*
 
-![App Screenshot](./Screenshot 2025-07-11 111657.png)
+![App Screenshot](./hero-image.png)
 
 ---
 
@@ -78,7 +78,7 @@ retro-pomodoro-timer/
 
 | Timer View                          | Task List & Settings                |
 | ----------------------------------- | ----------------------------------- |
-| ![Timer](./Screenshot 2025-07-11 112835.png) | ![Tasks](./Screenshot 2025-07-11 112911.png) |
+| ![Timer](./timer-view.png) | ![Tasks](./task-list.png) |
 
 ---
 
