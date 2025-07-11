@@ -1,96 +1,87 @@
 # 🕰️ Retro Pomodoro Timer
 
-*A cozy, vintage-themed productivity companion built with Electron.*
+*A cozy, vintage-themed productivity companion for the browser.*
 
-![App Screenshot](./screenshot.png) <!-- You can update this with your actual screenshot path -->
+![App Screenshot](./Screenshot 2025-07-11 111657.png)
+
+---
 
 ## 🎯 About
 
-**Retro Pomodoro Timer** is a desktop productivity app inspired by the Pomodoro Technique. Designed with a warm, nostalgic retro aesthetic, this timer helps you stay focused while evoking the charm of a simpler time. Whether you're working, taking a short break, or enjoying a long break, this app keeps your sessions structured and stress-free.
+**Retro Pomodoro Timer** is a browser-based timer app that helps you stay productive using the Pomodoro Technique. Designed with a nostalgic 70s retro style, it offers a warm and focused workspace environment—perfect for deep work sessions, cozy coding, or creative writing.
 
 ---
 
 ## ✨ Features
 
-* 🕰️ Classic Pomodoro timer with default 25/5/15 session lengths
-* 🧱 Retro interface with a brown/cream color palette and vintage fonts
-* ✅ Task management – add, check off, and review tasks
-* 📊 Session history tracking
-* 🔧 Adjustable work and break durations
-* 📦 Desktop app powered by [Electron](https://www.electronjs.org/)
+* ⏱ Pomodoro timer with **Work**, **Short Break**, and **Long Break** modes
+* 🎨 Retro aesthetic with brown as the primary color and vintage typewriter-style fonts
+* 🧠 Task tracking to help you stay organized
+* 🗂 Session history to reflect on your progress
+* 🛠 Customizable session durations
+* 💻 Fully responsive, works in modern browsers
+
+---
+
+## 🌐 Live Demo
+
+👉 [Try the Retro Pomodoro Timer online](https://your-live-demo-link.com)
+*(Replace this link with your actual deployment URL)*
 
 ---
 
 ## 📦 Installation
 
-### Prerequisites
+To run the project locally:
 
-* [Node.js](https://nodejs.org/) (v16 or above recommended)
-* [Git](https://git-scm.com/)
-
-### Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/retro-pomodoro-timer.git
 cd retro-pomodoro-timer
 ```
 
-### Install Dependencies
+### 2. Open in your browser
+
+Just open `index.html` in your favorite browser.
+
+Alternatively, if you're using VS Code:
 
 ```bash
-npm install
+npx live-server
 ```
-
-### Run the App (Development Mode)
-
-```bash
-npm start
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-Output files will be available in the `dist` or `build` folder depending on your setup.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-* **Frontend:** HTML, CSS, JavaScript
-* **Framework:** [Electron](https://www.electronjs.org/)
-* **Design Style:** Retro 70s aesthetic, warm brown tones, vintage fonts
+* **HTML** – Structure
+* **CSS** – Styling (vintage-inspired using browns, creams, and soft shadows)
+* **JavaScript** – Timer functionality and task management
 
 ---
 
-## 📁 Folder Structure (Simplified)
+## 📁 Folder Structure
 
 ```
 retro-pomodoro-timer/
 │
-├── src/
-│   ├── index.html        # Main HTML layout
-│   ├── style.css         # Retro theme styling
-│   ├── timer.js          # Timer logic
-│   └── renderer.js       # UI interactions
-│
-├── main.js               # Electron main process
-├── package.json
+├── index.html       # Main UI
+├── style.css        # Retro theme and layout
+├── script.js        # Timer and interactivity logic
 └── README.md
 ```
 
 ---
 
-## 📸 Screenshots
+## 🖼 Screenshots
 
-| Work Session                            | Task Management                         |
-| --------------------------------------- | --------------------------------------- |
-| ![Timer](./assets/screenshot-timer.png) | ![Tasks](./assets/screenshot-tasks.png) |
+| Timer View                          | Task List & Settings                |
+| ----------------------------------- | ----------------------------------- |
+| ![Timer](./Screenshot 2025-07-11 112835.png) | ![Tasks](./Screenshot 2025-07-11 112911.png) |
 
 ---
 
-## 💡 Inspiration
+## 🧠 Motivation
 
-This project is inspired by the idea of mixing mindfulness with productivity. Instead of overwhelming modern dashboards, Retro Pomodoro Timer brings back the charm of analog tools in a digital form.
+This project was created to blend productivity with calmness—no dark dashboards or aggressive alarms, just a simple, soothing Pomodoro experience with vintage flair.
