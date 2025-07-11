@@ -1,73 +1,96 @@
-# Welcome to your Lovable project
+# 🕰️ Retro Pomodoro Timer
 
-## Project info
+*A cozy, vintage-themed productivity companion built with Electron.*
 
-**URL**: https://lovable.dev/projects/0b4149b8-3100-41c0-b378-3658ab43334b
+![App Screenshot](./screenshot.png) <!-- You can update this with your actual screenshot path -->
 
-## How can I edit this code?
+## 🎯 About
 
-There are several ways of editing your application.
+**Retro Pomodoro Timer** is a desktop productivity app inspired by the Pomodoro Technique. Designed with a warm, nostalgic retro aesthetic, this timer helps you stay focused while evoking the charm of a simpler time. Whether you're working, taking a short break, or enjoying a long break, this app keeps your sessions structured and stress-free.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0b4149b8-3100-41c0-b378-3658ab43334b) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+* 🕰️ Classic Pomodoro timer with default 25/5/15 session lengths
+* 🧱 Retro interface with a brown/cream color palette and vintage fonts
+* ✅ Task management – add, check off, and review tasks
+* 📊 Session history tracking
+* 🔧 Adjustable work and break durations
+* 📦 Desktop app powered by [Electron](https://www.electronjs.org/)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+* [Node.js](https://nodejs.org/) (v16 or above recommended)
+* [Git](https://git-scm.com/)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Clone the Repository
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/yourusername/retro-pomodoro-timer.git
+cd retro-pomodoro-timer
 ```
 
-**Edit a file directly in GitHub**
+### Install Dependencies
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+```
 
-**Use GitHub Codespaces**
+### Run the App (Development Mode)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm start
+```
 
-## What technologies are used for this project?
+### Build for Production
 
-This project is built with:
+```bash
+npm run build
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Output files will be available in the `dist` or `build` folder depending on your setup.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/0b4149b8-3100-41c0-b378-3658ab43334b) and click on Share -> Publish.
+## 🛠️ Tech Stack
 
-## Can I connect a custom domain to my Lovable project?
+* **Frontend:** HTML, CSS, JavaScript
+* **Framework:** [Electron](https://www.electronjs.org/)
+* **Design Style:** Retro 70s aesthetic, warm brown tones, vintage fonts
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📁 Folder Structure (Simplified)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```
+retro-pomodoro-timer/
+│
+├── src/
+│   ├── index.html        # Main HTML layout
+│   ├── style.css         # Retro theme styling
+│   ├── timer.js          # Timer logic
+│   └── renderer.js       # UI interactions
+│
+├── main.js               # Electron main process
+├── package.json
+└── README.md
+```
+
+---
+
+## 📸 Screenshots
+
+| Work Session                            | Task Management                         |
+| --------------------------------------- | --------------------------------------- |
+| ![Timer](./assets/screenshot-timer.png) | ![Tasks](./assets/screenshot-tasks.png) |
+
+---
+
+## 💡 Inspiration
+
+This project is inspired by the idea of mixing mindfulness with productivity. Instead of overwhelming modern dashboards, Retro Pomodoro Timer brings back the charm of analog tools in a digital form.
