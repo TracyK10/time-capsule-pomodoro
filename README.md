@@ -25,8 +25,7 @@
 
 ## 🌐 Live Demo
 
-👉 [Try the Retro Pomodoro Timer online](https://your-live-demo-link.com)
-*(Replace this link with your actual deployment URL)*
+👉 [https://your-live-demo-link.com](https://time-capsule-pomodoro.vercel.app/)
 
 ---
 
